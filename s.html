@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品展示</title>
+    <style>
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            margin: 10px;
+            text-align: center;
+            flex: 0 0 calc(20% - 20px); /* 每行显示五张图片 */
+            max-width: calc(20% - 20px); /* 每行显示五张图片 */
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-weight: bold;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination button {
+            padding: 5px 10px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="products">
+    <div class="product">
+        <img src="https://thumbnail0.baidupcs.com/thumbnail/d7ba336f8i6d09e5a9b3a012a3eba284?fid=2521030012-250528-1091422415983628&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vGptDLvXiGnIXZ2Eq93MBqevq3I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=191627211179968853&dp-callid=0&time=1713340800&size=c1999_u1999&quality=100&vuk=2521030012&ft=image" alt="Product 1">
+        <div class="price">$50</div>
+    </div>
+    <div class="product">
+        <img src="https://thumbnail0.baidupcs.com/thumbnail/d7ba336f8i6d09e5a9b3a012a3eba284?fid=2521030012-250528-1091422415983628&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vGptDLvXiGnIXZ2Eq93MBqevq3I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=191627211179968853&dp-callid=0&time=1713340800&size=c1999_u1999&quality=100&vuk=2521030012&ft=image" alt="Product 2">
+        <div class="price">$60</div>
+    </div>
+    <div class="product">
+        <img src="https://thumbnail0.baidupcs.com/thumbnail/d7ba336f8i6d09e5a9b3a012a3eba284?fid=2521030012-250528-1091422415983628&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vGptDLvXiGnIXZ2Eq93MBqevq3I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=191627211179968853&dp-callid=0&time=1713340800&size=c1999_u1999&quality=100&vuk=2521030012&ft=image" alt="Product 3">
+        <div class="price">$70</div>
+    </div>
+    <div class="product">
+        <img src="https://thumbnail0.baidupcs.com/thumbnail/d7ba336f8i6d09e5a9b3a012a3eba284?fid=2521030012-250528-1091422415983628&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vGptDLvXiGnIXZ2Eq93MBqevq3I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=191627211179968853&dp-callid=0&time=1713340800&size=c1999_u1999&quality=100&vuk=2521030012&ft=image" alt="Product 4">
+        <div class="price">$80</div>
+    </div>
+    <div class="product">
+        <img src="https://thumbnail0.baidupcs.com/thumbnail/d7ba336f8i6d09e5a9b3a012a3eba284?fid=2521030012-250528-1091422415983628&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vGptDLvXiGnIXZ2Eq93MBqevq3I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=191627211179968853&dp-callid=0&time=1713340800&size=c1999_u1999&quality=100&vuk=2521030012&ft=image" alt="Product 5">
+        <div class="price">$90</div>
+    </div>  <div class="product">
+        <img src="https://thumbnail0.baidupcs.com/thumbnail/d7ba336f8i6d09e5a9b3a012a3eba284?fid=2521030012-250528-1091422415983628&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vGptDLvXiGnIXZ2Eq93MBqevq3I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=191627211179968853&dp-callid=0&time=1713340800&size=c1999_u1999&quality=100&vuk=2521030012&ft=image" alt="Product 6">
+        <div class="price">$50</div>
+    </div>
+    <div class="product">
+        <img src="https://thumbnail0.baidupcs.com/thumbnail/d7ba336f8i6d09e5a9b3a012a3eba284?fid=2521030012-250528-1091422415983628&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vGptDLvXiGnIXZ2Eq93MBqevq3I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=191627211179968853&dp-callid=0&time=1713340800&size=c1999_u1999&quality=100&vuk=2521030012&ft=image" alt="Product 7">
+        <div class="price">$60</div>
+    </div>
+    <div class="product">
+        <img src="https://thumbnail0.baidupcs.com/thumbnail/d7ba336f8i6d09e5a9b3a012a3eba284?fid=2521030012-250528-1091422415983628&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vGptDLvXiGnIXZ2Eq93MBqevq3I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=191627211179968853&dp-callid=0&time=1713340800&size=c1999_u1999&quality=100&vuk=2521030012&ft=image" alt="Product 8">
+        <div class="price">$70</div>
+    </div>
+    <div class="product">
+        <img src="https://thumbnail0.baidupcs.com/thumbnail/d7ba336f8i6d09e5a9b3a012a3eba284?fid=2521030012-250528-1091422415983628&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vGptDLvXiGnIXZ2Eq93MBqevq3I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=191627211179968853&dp-callid=0&time=1713340800&size=c1999_u1999&quality=100&vuk=2521030012&ft=image" alt="Product 9">
+        <div class="price">$80</div>
+    </div>
+    <div class="product">
+        <img src="https://thumbnail0.baidupcs.com/thumbnail/d7ba336f8i6d09e5a9b3a012a3eba284?fid=2521030012-250528-1091422415983628&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vGptDLvXiGnIXZ2Eq93MBqevq3I%3d&expires=8h&chkbd=0&chkv=0&dp-logid=191627211179968853&dp-callid=0&time=1713340800&size=c1999_u1999&quality=100&vuk=2521030012&ft=image" alt="Product 10">
+        <div class="price">$90</div>
+    </div>
+    <!-- Add more product items here -->
+</div>
+
+<div class="pagination">
+    <button onclick="previousPage()">Previous</button>
+    <button onclick="nextPage()">Next</button>
+</div>
+
+<script>
+    var currentPage = 0;
+    var productsPerPage = 10; // Change this value according to your preference
+
+    function showProducts() {
+        var products = document.querySelectorAll('.product');
+        var startIndex = currentPage * productsPerPage;
+        var endIndex = startIndex + productsPerPage;
+
+        products.forEach(function(product, index) {
+            if (index >= startIndex && index < endIndex) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+
+    function nextPage() {
+        var totalProducts = document.querySelectorAll('.product').length;
+        var totalPages = Math.ceil(totalProducts / productsPerPage);
+        if (currentPage < totalPages - 1) {
+            currentPage++;
+            showProducts();
+        }
+    }
+
+    function previousPage() {
+        if (currentPage > 0) {
+            currentPage--;
+            showProducts();
+        }
+    }
+
+    // Show initial products
+    showProducts();
+</script>
+
+</body>
+</html>
